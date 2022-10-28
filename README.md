@@ -1,6 +1,9 @@
 # InSAR-Time-Series-Clustering
 First version of the code linked to the October submission to Internal Journal of Applied Earth Observation and Geoinformation
 
+# dependecies
+You need to have the following libraries....
+
 # 1.Dataset
 Statical-based rationale for the InSAR Time Series K-means clustering based on Principal Component Analysis (PCA) dimensionality reduction.
 
