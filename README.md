@@ -4,7 +4,7 @@ First version of the code linked to the October submission to Internal Journal o
 #1.Dataset
 Statical-based rationale for the InSAR Time Series K-means clustering based on Principal Component Analysis (PCA) dimensionality reduction.
 
-![](images/Picture1.png)
+![](figures/Picture1.png)
 
 #Descrivi i 3 blocchi della procedura.
 #2.grid
