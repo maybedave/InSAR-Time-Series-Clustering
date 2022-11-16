@@ -18,7 +18,7 @@ Overlapping LOS InSAR Time Series from ascending and descending geometry of acqu
 
 ## Rationale of procedure
 
-(1) Spatial and temporal post-processing of the PSI dataset to retrieve newly interpolated vertical and horizontal displacement TS-InSAR; 2) PCA-based dimensionality reduction and features retrieval; 3) Unsupervised K-Means learning for TS-InSAR automated clustering and decomposition of the cluster centroids. 
+(1) Spatial and temporal post-processing of the PSI dataset to retrieve newly interpolated vertical and horizontal displacement TS-InSAR; (2) PCA-based dimensionality reduction and features retrieval; (3) Unsupervised K-Means learning for TS-InSAR automated clustering and decomposition of the cluster centroids. 
 
 ![](figures/Picture_3.png)
 
