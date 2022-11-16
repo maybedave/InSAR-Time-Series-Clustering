@@ -22,6 +22,15 @@ Overlapping LOS InSAR Time Series from ascending and descending geometry of acqu
 
 ![](figures/Picture_3.png)
 
+## Output
+InSAR features classified according to the K-mean clustering analysis, where the relative clusters series are represented through the 10th, 90th percentile (grey series) and the series centroid (red series).
+
+![](figures/Picture_4.png)
+
+TS-InSAR cluster centroid decomposition into trend (Linear Regression) and seasonality (power spectrum) components.
+
+![](figures/Picture_5.png)
+
 ## Acknowledgment
 There is no restriction about the research/commercial/scientific use of this script. 
 Please acknowledge the following work: 
