@@ -3,12 +3,9 @@ First version of the code linked to the October submission to International Jour
 
 Automated and unsupervised approach based on Principal Component Analysis (PCA) and K-means clustering to detect patterns of ground deformation from InSAR Time Series.
 
-
-# 1.Dataset
-
-
 ![](figures/Picture_1.png)
 
+# 1.Dataset
 # Descrivi i 3 blocchi della procedura.
 
 # Acknowledgment
