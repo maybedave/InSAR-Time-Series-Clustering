@@ -17,7 +17,7 @@ Automated and unsupervised approach based on Principal Component Analysis (PCA),
 ## Input Data
 Overlapping LOS InSAR Time Series from ascending and descending geometry of acquisition in CSV format.
 
-![](figures/)
+![](figures/Picture_2.png)
 
 # Acknowledgment
 There is no restriction about the research/commercial/scientific use of this script. 
