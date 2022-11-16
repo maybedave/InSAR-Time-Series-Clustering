@@ -241,6 +241,3 @@ Vh_clusters_centroid_1=pd.DataFrame(Vh_clusters_centroids[0,:], index=new_dates)
 # input: dates (DatetimeIndex), dataframe containing cluster centroid discrete values
 # output:  slope of the best-fit line, intercept of the best-fit line, rmse of the regression, dataframe containing the first 6 peaks of the spectral power with conversion of frequency to relative period
 slope, intercept, rmse, powerspectrum = regression_DFT.LinRegression_DFT(new_dates, Vh_clusters_centroid_1)
-
-X=np.array(range(len(new_dates)), dtype=int).reshape(-1, 1)
-X_plot=pd.to_datetime(new_dates)
