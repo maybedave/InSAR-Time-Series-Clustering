@@ -8,11 +8,8 @@ Automated and unsupervised approach based on Principal Component Analysis (PCA),
 ## Table of contents
 - [Input Data](#input-data)
 - [Rationale of procedure](#rationale-of-procedure)
-  - [TSInSAR postprocessing](#tsinsar-postprocessing)
-  - [PCA analysis](#pca-analysis)
-  - [TSInSAR clustering & decomposition](#tsinsar-clustering-&-decomposition)
 - [Output](#output)
-- [Citation](#citation)
+- [Acknowledgment](#acknowledgment)
 
 ## Input Data
 Overlapping LOS InSAR Time Series from ascending and descending geometry of acquisition in CSV format.
@@ -21,10 +18,11 @@ Overlapping LOS InSAR Time Series from ascending and descending geometry of acqu
 
 ## Rationale of procedure
 
+1) Spatial and temporal post-processing of the PSI dataset to retrieve newly interpolated vertical and horizontal displacement TS-InSAR; 2) PCA-based dimensionality reduction and features retrieval; 3) Unsupervised K-Means learning for TS-InSAR automated clustering and decomposition of the cluster centroids. 
 
 ![](figures/Picture_3.png)
 
-# Acknowledgment
+## Acknowledgment
 There is no restriction about the research/commercial/scientific use of this script. 
 Please acknowledge the following work: 
 Festa, D.
