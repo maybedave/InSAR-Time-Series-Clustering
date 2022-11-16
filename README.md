@@ -19,6 +19,11 @@ Overlapping LOS InSAR Time Series from ascending and descending geometry of acqu
 
 ![](figures/Picture_2.png)
 
+## Rationale of procedure
+
+
+![](figures/Picture_3.png)
+
 # Acknowledgment
 There is no restriction about the research/commercial/scientific use of this script. 
 Please acknowledge the following work: 
