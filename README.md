@@ -1,7 +1,7 @@
 # InSAR-Time-Series-Clustering
 First version of the code linked to the October submission to International Journal of Applied Earth Observation and Geoinformation.
 
-Automated and unsupervised approach based on Principal Component Analysis (PCA), K-means clustering, Linear regression and Fast Fourier Transform to detect patterns of ground deformation from InSAR Time Series.
+Automated and unsupervised approach based on Principal Component Analysis (PCA), K-means clustering, Linear regression and Fast Fourier Transform to detect and analyze patterns of ground deformation from InSAR Time Series.
 
 ![](figures/Picture_1.png)
 
