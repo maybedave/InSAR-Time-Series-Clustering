@@ -3,7 +3,7 @@ First version of the code linked to the November submission to International Jou
 
 Automated and unsupervised approach based on Principal Component Analysis (PCA), K-means clustering, Linear regression and Fast Fourier Transform to detect and analyze patterns of ground deformation from InSAR Time Series.
 
-![](figures/Picture_1.png)
+![](figures/Picture_1.png=250x250)
 
 ## Table of contents
 - [Input Data](#input-data)
@@ -17,7 +17,7 @@ Automated and unsupervised approach based on Principal Component Analysis (PCA),
 ## Input Data
 Overlapping LOS InSAR Time Series from ascending and descending geometry of acquisition in CSV format.
 
-![](figures/Picture_2.png)
+![](figures/Picture_2.png=250x250)
 
 # Acknowledgment
 There is no restriction about the research/commercial/scientific use of this script. 
