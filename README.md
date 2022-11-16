@@ -7,7 +7,7 @@ Automated and unsupervised approach based on Principal Component Analysis (PCA) 
 # 1.Dataset
 
 
-![](figures/Picture1.png)
+![](figures/Picture_1.png)
 
 # Descrivi i 3 blocchi della procedura.
 
