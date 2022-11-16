@@ -8,11 +8,16 @@ Automated and unsupervised approach based on Principal Component Analysis (PCA),
 ## Table of contents
 - [Input Data](#input-data)
 - [Rationale of procedure](#rationale-of-procedure)
+  - [TSInSAR postprocessing](#tsinsar-postprocessing)
+  - [PCA analysis](#pca-analysis)
+  - [TSInSAR clustering & decomposition](#tsinsar-clustering-&-decomposition)
 - [Output](#output)
 - [Citation](#citation)
 
 ## Input Data
-Descrivi i 3 blocchi della procedura.
+Overlapping LOS InSAR Time Series from ascending and descending geometry of acquisition in CSV format.
+
+![](figures/)
 
 # Acknowledgment
 There is no restriction about the research/commercial/scientific use of this script. 
