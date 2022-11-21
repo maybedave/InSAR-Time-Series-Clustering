@@ -9,6 +9,8 @@ Decompose clustered time series through Linear Regression and Fast Fourier Trans
 ***Version 10/11/2022
 
 """
+#create the environment from the 'gee_environment.yml' file provided in.....
+
 import sys
 sys.path.append('W:/Ubuntu/BGS/1.cluster/backup_26_04_2022')
 from kneed import KneeLocator
