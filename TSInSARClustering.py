@@ -26,10 +26,10 @@ np.set_printoptions(precision=4)
 np.set_printoptions(suppress=True)
 
 # Read CSV of the ascending geometry time series Insar dataset containing the "X" "Y" field projected coordinates
-ASC = pd.read_csv(r'W:/Ubuntu/BGS/1.cluster/ascending_data_sample.csv', sep=',')
+ASC = pd.read_csv(r'W:/Ubuntu/BGS/1.cluster/ascending_data_sample.csv', sep=',') #file provided in 'InSAR-Time-Series-Clustering/sample_dataset/sample_dataset/ascending_InSAR_sample.csv'
 
 # Read CSV of the descending geometry time series Insar dataset containing the "X" "Y" field projected coordinates 
-DESC = pd.read_csv(r'W:/Ubuntu/BGS/1.cluster/descending_data_sample.csv', sep=',')
+DESC = pd.read_csv(r'W:/Ubuntu/BGS/1.cluster/descending_data_sample.csv', sep=',') #file provided in 'InSAR-Time-Series-Clustering/sample_dataset/sample_dataset/descending_InSAR_sample.csv'
 
 datasets_names = ["data_asc", "data_desc"]
 # unique dictionary containing both ascending and descending dataframes
