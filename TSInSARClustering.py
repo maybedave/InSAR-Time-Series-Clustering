@@ -12,9 +12,6 @@ Decompose clustered time series through Linear Regression and Fast Fourier Trans
 #create the environment from the 'gee_environment.yml' file provided in.....
 #command to be run>> conda env create -f gee_environment.yml, see: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file
 
-
-import sys
-sys.path.append('W:/Ubuntu/BGS/1.cluster/backup_26_04_2022')
 from kneed import KneeLocator
 import pandas as pd
 import numpy as np
@@ -30,10 +27,10 @@ np.set_printoptions(precision=4)
 np.set_printoptions(suppress=True)
 
 # Read CSV of the ascending geometry time series Insar dataset containing the "X" "Y" field projected coordinates
-ASC = pd.read_csv(r'W:/Ubuntu/BGS/1.cluster/ascending_data_sample.csv', sep=',') #file provided in 'InSAR-Time-Series-Clustering/sample_dataset/sample_dataset/ascending_InSAR_sample.csv'
+ASC = pd.read_csv(r'sample_dataset/sample_dataset/ascending_InSAR_sample.csv', sep=',') #file provided in 'InSAR-Time-Series-Clustering/sample_dataset/sample_dataset/ascending_InSAR_sample.csv'
 
 # Read CSV of the descending geometry time series Insar dataset containing the "X" "Y" field projected coordinates 
-DESC = pd.read_csv(r'W:/Ubuntu/BGS/1.cluster/descending_data_sample.csv', sep=',') #file provided in 'InSAR-Time-Series-Clustering/sample_dataset/sample_dataset/descending_InSAR_sample.csv'
+DESC = pd.read_csv(r'sample_dataset/sample_dataset/descending_InSAR_sample.csv', sep=',') #file provided in 'InSAR-Time-Series-Clustering/sample_dataset/sample_dataset/descending_InSAR_sample.csv'
 
 datasets_names = ["data_asc", "data_desc"]
 # unique dictionary containing both ascending and descending dataframes
