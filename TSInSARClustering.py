@@ -198,10 +198,10 @@ km2, cluster_center2, cluster_center_shape2, time_series_class2, labels2, count_
 # plot the % of the clusters
 KMeans_clustering.cluster_distribution_plotter(
     number_of_components, count_labels, labels)
-plt.savefig('W:/Ubuntu/BGS/1.cluster/backup_26_04_2022/Clusters_%_distributionVh.png')
+#plt.savefig('/Clusters_%_distributionVh.png')
 KMeans_clustering.cluster_distribution_plotter(
     number_of_components2, count_labels2, labels2)
-plt.savefig('W:/Ubuntu/BGS/1.cluster/backup_26_04_2022/Clusters_%_distributionVv.png')
+#plt.savefig('/Clusters_%_distributionVv.png')
 
 # Plotting the clusters centre
 # for plotting, https://tslearn.readthedocs.io/en/stable/auto_examples/clustering/plot_kmeans.html#sphx-glr-auto-examples-clustering-plot-kmeans-py
@@ -209,10 +209,10 @@ plt.savefig('W:/Ubuntu/BGS/1.cluster/backup_26_04_2022/Clusters_%_distributionVv
 
 Vh_clusters_centroids = KMeans_clustering.cluster_center_plotter(
     Vh_df_array, number_of_components, time_series_class, cluster_center)
-plt.savefig('W:/Ubuntu/BGS/1.cluster/backup_26_04_2022/Clusters_centersVh.png')
+#plt.savefig('/Clusters_centersVh.png')
 Vv_clusters_centroids = KMeans_clustering.cluster_center_plotter(
     Vv_df_array, number_of_components2, time_series_class2, cluster_center2)
-plt.savefig('W:/Ubuntu/BGS/1.cluster/backup_26_04_2022/Clusters_centersVv.png')
+#plt.savefig('/Clusters_centersVv.png')
 
 labels = labels+1
 labels2 = labels2+1
@@ -226,9 +226,9 @@ df_coords_clusters2 = pd.concat(
 
 # export cluster location as Shapefile
 df_coords_clusters.to_file(
-    'W:/Ubuntu/BGS/1.cluster/backup_26_04_2022/cluster_horizontal_components.shp')
+    #'/cluster_horizontal_components.shp')
 df_coords_clusters2.to_file(
-    'W:/Ubuntu/BGS/1.cluster/backup_26_04_2022/cluster_vertical_components.shp')
+    #'/cluster_vertical_components.shp')
 
 #----------------------------------------- TIME SERIES DECOMPOSE --------------
 # for linear regression theory, see https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
