@@ -10,6 +10,8 @@ Decompose clustered time series through Linear Regression and Fast Fourier Trans
 
 """
 #create the environment from the 'gee_environment.yml' file provided in.....
+#command to be run>> conda env create -f gee_environment.yml, see: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file
+
 
 import sys
 sys.path.append('W:/Ubuntu/BGS/1.cluster/backup_26_04_2022')
