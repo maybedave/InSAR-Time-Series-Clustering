@@ -12,6 +12,9 @@ Decompose clustered time series through Linear Regression and Fast Fourier Trans
 #create the environment from the 'gee_environment.yml' file provided in.....
 #command to be run>> conda env create -f gee_environment.yml, see: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file
 
+import sys
+sys.path.append(r'
+
 from kneed import KneeLocator
 import pandas as pd
 import numpy as np
@@ -226,9 +229,9 @@ df_coords_clusters2 = pd.concat(
 
 # export cluster location as Shapefile
 df_coords_clusters.to_file(
-    #'/cluster_horizontal_components.shp')
+    '/cluster_horizontal_components.shp')
 df_coords_clusters2.to_file(
-    #'/cluster_vertical_components.shp')
+    '/cluster_vertical_components.shp')
 
 #----------------------------------------- TIME SERIES DECOMPOSE --------------
 # for linear regression theory, see https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
