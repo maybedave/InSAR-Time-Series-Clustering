@@ -236,9 +236,9 @@ df_coords_clusters2 = pd.concat(
 
 # export cluster location as Shapefile
 df_coords_clusters.to_file(
-    outpath '/cluster_horizontal_components.shp')
+    outpath / 'cluster_horizontal_components.shp')
 df_coords_clusters2.to_file(
-    outpath '/cluster_vertical_components.shp')
+    outpath / 'cluster_vertical_components.shp')
 
 #----------------------------------------- TIME SERIES DECOMPOSE --------------
 # for linear regression theory, see https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
