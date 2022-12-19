@@ -12,15 +12,19 @@ Decompose clustered time series through Linear Regression and Fast Fourier Trans
 #create the environment from the 'gee_environment.yml' file provided in.....
 #command to be run>> conda env create -f gee_environment.yml, see: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file
 
+#Required inputs to set prior running the code: 1) append path to subfunctions folder
+#                                                 2) path to InSAR data
+#                                                   3) path to output folder
+
 import sys
-sys.path.append(r'
+sys.path.append(r'C:/path/to/subfunctions/folder') #1)append path to subfunctions folder
 
 from kneed import KneeLocator
 import pandas as pd
 import numpy as np
 import datetime as dt
 import matplotlib.pyplot as plt
-# import dependent functions
+# import subfunctions 
 import V_H_reprojection
 import KMeans_clustering
 import PCAnalysis
@@ -29,11 +33,14 @@ import regression_DFT
 np.set_printoptions(precision=4)
 np.set_printoptions(suppress=True)
 
+path_to_InSAR_data = Path("path/to/InSAR/data") # 2) path to InSAR data
+outpath = Path("path/to/output/folder") # 3) path to output folder
+
 # Read CSV of the ascending geometry time series Insar dataset containing the "X" "Y" field projected coordinates
-ASC = pd.read_csv(r'sample_dataset/sample_dataset/ascending_InSAR_sample.csv', sep=',') #file provided in 'InSAR-Time-Series-Clustering/sample_dataset/sample_dataset/ascending_InSAR_sample.csv'
+ASC = pd.read_csv(path_to_InSAR_data / 'ascending_InSAR_sample.csv', sep=',') #file provided in 'InSAR-Time-Series-Clustering/sample_dataset/sample_dataset/ascending_InSAR_sample.csv'
 
 # Read CSV of the descending geometry time series Insar dataset containing the "X" "Y" field projected coordinates 
-DESC = pd.read_csv(r'sample_dataset/sample_dataset/descending_InSAR_sample.csv', sep=',') #file provided in 'InSAR-Time-Series-Clustering/sample_dataset/sample_dataset/descending_InSAR_sample.csv'
+DESC = pd.read_csv(path_to_InSAR_data / 'descending_InSAR_sample.csv', sep=',') #file provided in 'InSAR-Time-Series-Clustering/sample_dataset/sample_dataset/descending_InSAR_sample.csv'
 
 datasets_names = ["data_asc", "data_desc"]
 # unique dictionary containing both ascending and descending dataframes
@@ -229,9 +236,9 @@ df_coords_clusters2 = pd.concat(
 
 # export cluster location as Shapefile
 df_coords_clusters.to_file(
-    '/cluster_horizontal_components.shp')
+    outpath '/cluster_horizontal_components.shp')
 df_coords_clusters2.to_file(
-    '/cluster_vertical_components.shp')
+    outpath '/cluster_vertical_components.shp')
 
 #----------------------------------------- TIME SERIES DECOMPOSE --------------
 # for linear regression theory, see https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
