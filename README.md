@@ -35,5 +35,5 @@ TS-InSAR cluster centroid decomposition into trend (Linear Regression) and seaso
 There is no restriction about the research/commercial/scientific use of this script. 
 Please acknowledge the following work: 
 
-Davide Festa, Alessandro Novellino, Ekbal Hussain, Luke Bateson, Nicola Casagli, Pierluigi Confuorto, Claudio De Luca, Matteo Del Soldato & Federico Raspini (2023). Unsupervised detection of InSAR time series patterns based on PCA and K-means clustering, International Journal of Applied Earth Observation and Geoinformation, accepted for publication.
+Davide Festa, Alessandro Novellino, Ekbal Hussain, Luke Bateson, Nicola Casagli, Pierluigi Confuorto, Matteo Del Soldato & Federico Raspini (2023). Unsupervised detection of InSAR time series patterns based on PCA and K-means clustering, International Journal of Applied Earth Observation and Geoinformation, accepted for publication.
 
